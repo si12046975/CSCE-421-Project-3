@@ -1,0 +1,112 @@
+\doxysection{Request Class Reference}
+\hypertarget{class_request}{}\label{class_request}\index{Request@{Request}}
+
+
+Represents a network request with input and output IP addresses, processing time, and job type.  
+
+
+
+
+{\ttfamily \#include $<$Request.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_request_a9141cc3e39aa38e8636aad15ba57a380}{Request}} (std\+::string ip\+In, std\+::string ip\+Out, int time, char job\+Type)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_request}{Request} with specified parameters. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_request_a25705cdbdf85c7ffdfff0e41795bfbfc}{get\+Ip\+In}} () const
+\begin{DoxyCompactList}\small\item\em Gets the input IP address of the request. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_request_aa55c898286b6895e7d7245c9de97b211}{get\+Ip\+Out}} () const
+\begin{DoxyCompactList}\small\item\em Gets the output IP address of the request. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_request_ae2e2641e6eb49b4dd1b29726c098789d}{get\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Gets the time required to process the request. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_request_a543cfe98d09b712ffcfe95f3322fa5ba}{get\+Job\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Gets the type of job for the request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a network request with input and output IP addresses, processing time, and job type. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_request_a9141cc3e39aa38e8636aad15ba57a380}\index{Request@{Request}!Request@{Request}}
+\index{Request@{Request}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}}
+{\footnotesize\ttfamily \label{class_request_a9141cc3e39aa38e8636aad15ba57a380} 
+Request\+::\+Request (\begin{DoxyParamCaption}\item[{std\+::string}]{ip\+In}{, }\item[{std\+::string}]{ip\+Out}{, }\item[{int}]{time}{, }\item[{char}]{job\+Type}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_request}{Request} with specified parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+In} & The input IP address. \\
+\hline
+{\em ip\+Out} & The output IP address. \\
+\hline
+{\em time} & The time required to process the request. \\
+\hline
+{\em job\+Type} & The type of job (\textquotesingle{}P\textquotesingle{} for processing, \textquotesingle{}S\textquotesingle{} for storage). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_request_a25705cdbdf85c7ffdfff0e41795bfbfc}\index{Request@{Request}!getIpIn@{getIpIn}}
+\index{getIpIn@{getIpIn}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getIpIn()}{getIpIn()}}
+{\footnotesize\ttfamily \label{class_request_a25705cdbdf85c7ffdfff0e41795bfbfc} 
+std\+::string Request\+::get\+Ip\+In (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the input IP address of the request. 
+
+\begin{DoxyReturn}{Returns}
+The input IP address. 
+\end{DoxyReturn}
+\Hypertarget{class_request_aa55c898286b6895e7d7245c9de97b211}\index{Request@{Request}!getIpOut@{getIpOut}}
+\index{getIpOut@{getIpOut}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getIpOut()}{getIpOut()}}
+{\footnotesize\ttfamily \label{class_request_aa55c898286b6895e7d7245c9de97b211} 
+std\+::string Request\+::get\+Ip\+Out (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the output IP address of the request. 
+
+\begin{DoxyReturn}{Returns}
+The output IP address. 
+\end{DoxyReturn}
+\Hypertarget{class_request_a543cfe98d09b712ffcfe95f3322fa5ba}\index{Request@{Request}!getJobType@{getJobType}}
+\index{getJobType@{getJobType}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getJobType()}{getJobType()}}
+{\footnotesize\ttfamily \label{class_request_a543cfe98d09b712ffcfe95f3322fa5ba} 
+char Request\+::get\+Job\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the type of job for the request. 
+
+\begin{DoxyReturn}{Returns}
+The job type (\textquotesingle{}P\textquotesingle{} or \textquotesingle{}S\textquotesingle{}). 
+\end{DoxyReturn}
+\Hypertarget{class_request_ae2e2641e6eb49b4dd1b29726c098789d}\index{Request@{Request}!getTime@{getTime}}
+\index{getTime@{getTime}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily \label{class_request_ae2e2641e6eb49b4dd1b29726c098789d} 
+int Request\+::get\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the time required to process the request. 
+
+\begin{DoxyReturn}{Returns}
+The processing time. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_request_8h}{Request.\+h}}\item 
+\mbox{\hyperlink{_request_8cpp}{Request.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\doxysection{Load\+Balancer Class Reference}
+\hypertarget{class_load_balancer}{}\label{class_load_balancer}\index{LoadBalancer@{LoadBalancer}}
+
+
+Manages a pool of servers to balance incoming requests.  
+
+
+
+
+{\ttfamily \#include $<$Load\+Balancer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_load_balancer_a41456019644f68fba35793776cc2b1c8}{Load\+Balancer}} (int initial\+Servers)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_load_balancer}{Load\+Balancer} with a specified number of initial servers. \end{DoxyCompactList}\item 
+\Hypertarget{class_load_balancer_a69951a7bb77be7fafd4d5ad6919abd80}\label{class_load_balancer_a69951a7bb77be7fafd4d5ad6919abd80} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Load\+Balancer} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_load_balancer}{Load\+Balancer}. Cleans up allocated resources. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_load_balancer_abba1a1fcaa67e79e9aee94e903e1458c}{add\+Request}} (const \mbox{\hyperlink{class_request}{Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Adds a request to the load balancer\textquotesingle{}s queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_load_balancer_adbfd41c4b1711af8307e33e842df21fe}{process\+Requests}} (int runtime)
+\begin{DoxyCompactList}\small\item\em Processes requests for a specified runtime. \end{DoxyCompactList}\item 
+\Hypertarget{class_load_balancer_a16a7376345511ffd0850b4af06d1567d}\label{class_load_balancer_a16a7376345511ffd0850b4af06d1567d} 
+void {\bfseries add\+Random\+Request} ()
+\begin{DoxyCompactList}\small\item\em Adds a random request to the queue. \end{DoxyCompactList}\item 
+\Hypertarget{class_load_balancer_a27a16879c41d0e472c980b59782efeb1}\label{class_load_balancer_a27a16879c41d0e472c980b59782efeb1} 
+void {\bfseries add\+Guaranteed\+Request} ()
+\begin{DoxyCompactList}\small\item\em Adds a guaranteed request to the queue. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_load_balancer_a7c8d4b0f46ff078f7d8d9bd7e5d5c865}{get\+Last\+Processed\+Server\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Gets the ID of the last server that processed a request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages a pool of servers to balance incoming requests. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_load_balancer_a41456019644f68fba35793776cc2b1c8}\index{LoadBalancer@{LoadBalancer}!LoadBalancer@{LoadBalancer}}
+\index{LoadBalancer@{LoadBalancer}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{LoadBalancer()}{LoadBalancer()}}
+{\footnotesize\ttfamily \label{class_load_balancer_a41456019644f68fba35793776cc2b1c8} 
+Load\+Balancer\+::\+Load\+Balancer (\begin{DoxyParamCaption}\item[{int}]{initial\+Servers}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_load_balancer}{Load\+Balancer} with a specified number of initial servers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Servers} & The number of servers to start with. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_load_balancer_abba1a1fcaa67e79e9aee94e903e1458c}\index{LoadBalancer@{LoadBalancer}!addRequest@{addRequest}}
+\index{addRequest@{addRequest}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{addRequest()}{addRequest()}}
+{\footnotesize\ttfamily \label{class_load_balancer_abba1a1fcaa67e79e9aee94e903e1458c} 
+void Load\+Balancer\+::add\+Request (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_request}{Request}} \&}]{request}{}\end{DoxyParamCaption})}
+
+
+
+Adds a request to the load balancer\textquotesingle{}s queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The request to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_load_balancer_a7c8d4b0f46ff078f7d8d9bd7e5d5c865}\index{LoadBalancer@{LoadBalancer}!getLastProcessedServerId@{getLastProcessedServerId}}
+\index{getLastProcessedServerId@{getLastProcessedServerId}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{getLastProcessedServerId()}{getLastProcessedServerId()}}
+{\footnotesize\ttfamily \label{class_load_balancer_a7c8d4b0f46ff078f7d8d9bd7e5d5c865} 
+int Load\+Balancer\+::get\+Last\+Processed\+Server\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the ID of the last server that processed a request. 
+
+\begin{DoxyReturn}{Returns}
+The ID of the last processed server. 
+\end{DoxyReturn}
+\Hypertarget{class_load_balancer_adbfd41c4b1711af8307e33e842df21fe}\index{LoadBalancer@{LoadBalancer}!processRequests@{processRequests}}
+\index{processRequests@{processRequests}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{processRequests()}{processRequests()}}
+{\footnotesize\ttfamily \label{class_load_balancer_adbfd41c4b1711af8307e33e842df21fe} 
+void Load\+Balancer\+::process\+Requests (\begin{DoxyParamCaption}\item[{int}]{runtime}{}\end{DoxyParamCaption})}
+
+
+
+Processes requests for a specified runtime. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em runtime} & The total time to run the load balancer. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_load_balancer_8h}{Load\+Balancer.\+h}}\item 
+\mbox{\hyperlink{_load_balancer_8cpp}{Load\+Balancer.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\doxysection{Web\+Server Class Reference}
+\hypertarget{class_web_server}{}\label{class_web_server}\index{WebServer@{WebServer}}
+
+
+Represents a web server that processes network requests.  
+
+
+
+
+{\ttfamily \#include $<$Web\+Server.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_web_server_a5044757cd8574d3f62a7eec5d51fb00f}{Web\+Server}} (int id)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_web_server}{Web\+Server} with a specified ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_web_server_a2739c1973665a9fd920dce691a12b9e5}{is\+Available}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the server is available. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_web_server_a3c7a0293fd7557b10cda972c10047a70}{process\+Request}} (const \mbox{\hyperlink{class_request}{Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Processes a request by setting the server to unavailable and setting the processing time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_web_server_a968f7fc0af3bbc4072dd6013da2825c5}{set\+Available}} (bool available)
+\begin{DoxyCompactList}\small\item\em Sets the availability status of the server. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_web_server_aeb7683db74eccb456592ff2f1dc211d8}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Gets the ID of the server. \end{DoxyCompactList}\item 
+\Hypertarget{class_web_server_a922e8c4f57f2ab8f6d153617dcc76085}\label{class_web_server_a922e8c4f57f2ab8f6d153617dcc76085} 
+void {\bfseries decrement\+Processing\+Time} ()
+\begin{DoxyCompactList}\small\item\em Decrements the processing time of the server. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_web_server_af5912301d3530f5182891ec3587d15a3}{get\+Processing\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current processing time of the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a web server that processes network requests. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_web_server_a5044757cd8574d3f62a7eec5d51fb00f}\index{WebServer@{WebServer}!WebServer@{WebServer}}
+\index{WebServer@{WebServer}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{WebServer()}{WebServer()}}
+{\footnotesize\ttfamily \label{class_web_server_a5044757cd8574d3f62a7eec5d51fb00f} 
+Web\+Server\+::\+Web\+Server (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_web_server}{Web\+Server} with a specified ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the server. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_web_server_aeb7683db74eccb456592ff2f1dc211d8}\index{WebServer@{WebServer}!getId@{getId}}
+\index{getId@{getId}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \label{class_web_server_aeb7683db74eccb456592ff2f1dc211d8} 
+int Web\+Server\+::get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the ID of the server. 
+
+\begin{DoxyReturn}{Returns}
+The server ID. 
+\end{DoxyReturn}
+\Hypertarget{class_web_server_af5912301d3530f5182891ec3587d15a3}\index{WebServer@{WebServer}!getProcessingTime@{getProcessingTime}}
+\index{getProcessingTime@{getProcessingTime}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{getProcessingTime()}{getProcessingTime()}}
+{\footnotesize\ttfamily \label{class_web_server_af5912301d3530f5182891ec3587d15a3} 
+int Web\+Server\+::get\+Processing\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the current processing time of the server. 
+
+\begin{DoxyReturn}{Returns}
+The current processing time. 
+\end{DoxyReturn}
+\Hypertarget{class_web_server_a2739c1973665a9fd920dce691a12b9e5}\index{WebServer@{WebServer}!isAvailable@{isAvailable}}
+\index{isAvailable@{isAvailable}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{isAvailable()}{isAvailable()}}
+{\footnotesize\ttfamily \label{class_web_server_a2739c1973665a9fd920dce691a12b9e5} 
+bool Web\+Server\+::is\+Available (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Checks if the server is available. 
+
+\begin{DoxyReturn}{Returns}
+True if the server is available, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_web_server_a3c7a0293fd7557b10cda972c10047a70}\index{WebServer@{WebServer}!processRequest@{processRequest}}
+\index{processRequest@{processRequest}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{processRequest()}{processRequest()}}
+{\footnotesize\ttfamily \label{class_web_server_a3c7a0293fd7557b10cda972c10047a70} 
+void Web\+Server\+::process\+Request (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_request}{Request}} \&}]{request}{}\end{DoxyParamCaption})}
+
+
+
+Processes a request by setting the server to unavailable and setting the processing time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The request to be processed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_web_server_a968f7fc0af3bbc4072dd6013da2825c5}\index{WebServer@{WebServer}!setAvailable@{setAvailable}}
+\index{setAvailable@{setAvailable}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{setAvailable()}{setAvailable()}}
+{\footnotesize\ttfamily \label{class_web_server_a968f7fc0af3bbc4072dd6013da2825c5} 
+void Web\+Server\+::set\+Available (\begin{DoxyParamCaption}\item[{bool}]{available}{}\end{DoxyParamCaption})}
+
+
+
+Sets the availability status of the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em available} & The availability status to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_web_server_8h}{Web\+Server.\+h}}\item 
+\mbox{\hyperlink{_web_server_8cpp}{Web\+Server.\+cpp}}\end{DoxyCompactItemize}

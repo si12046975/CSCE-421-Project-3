@@ -1,0 +1,93 @@
+\doxysection{Request\+Queue Class Reference}
+\hypertarget{class_request_queue}{}\label{class_request_queue}\index{RequestQueue@{RequestQueue}}
+
+
+Manages a queue of network requests.  
+
+
+
+
+{\ttfamily \#include $<$Request\+Queue.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_request_queue_a6ebfe8deaaadc3172f69ff5640a3655c}{enqueue}} (const \mbox{\hyperlink{class_request}{Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Adds a request to the queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_request}{Request}} \mbox{\hyperlink{class_request_queue_ae170f2f285843d363ac003b7263dde95}{dequeue}} ()
+\begin{DoxyCompactList}\small\item\em Removes and returns the request at the front of the queue. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_request_queue_a64c8b54cc30da887d61663e44dece1d5}{is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the queue is empty. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_request_queue_abf2a845d6c9d68ce2a29eb6114dcdbf9}{size}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of requests in the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages a queue of network requests. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_request_queue_ae170f2f285843d363ac003b7263dde95}\index{RequestQueue@{RequestQueue}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!RequestQueue@{RequestQueue}}
+\doxysubsubsection{\texorpdfstring{dequeue()}{dequeue()}}
+{\footnotesize\ttfamily \label{class_request_queue_ae170f2f285843d363ac003b7263dde95} 
+\mbox{\hyperlink{class_request}{Request}} Request\+Queue\+::dequeue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Removes and returns the request at the front of the queue. 
+
+\begin{DoxyReturn}{Returns}
+The request at the front of the queue. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & If the queue is empty. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_request_queue_a6ebfe8deaaadc3172f69ff5640a3655c}\index{RequestQueue@{RequestQueue}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!RequestQueue@{RequestQueue}}
+\doxysubsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily \label{class_request_queue_a6ebfe8deaaadc3172f69ff5640a3655c} 
+void Request\+Queue\+::enqueue (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_request}{Request}} \&}]{request}{}\end{DoxyParamCaption})}
+
+
+
+Adds a request to the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The request to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_request_queue_a64c8b54cc30da887d61663e44dece1d5}\index{RequestQueue@{RequestQueue}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!RequestQueue@{RequestQueue}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{class_request_queue_a64c8b54cc30da887d61663e44dece1d5} 
+bool Request\+Queue\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Checks if the queue is empty. 
+
+\begin{DoxyReturn}{Returns}
+True if the queue is empty, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_request_queue_abf2a845d6c9d68ce2a29eb6114dcdbf9}\index{RequestQueue@{RequestQueue}!size@{size}}
+\index{size@{size}!RequestQueue@{RequestQueue}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_request_queue_abf2a845d6c9d68ce2a29eb6114dcdbf9} 
+size\+\_\+t Request\+Queue\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of requests in the queue. 
+
+\begin{DoxyReturn}{Returns}
+The size of the queue. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_request_queue_8h}{Request\+Queue.\+h}}\item 
+\mbox{\hyperlink{_request_queue_8cpp}{Request\+Queue.\+cpp}}\end{DoxyCompactItemize}

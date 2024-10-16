@@ -1,0 +1,31 @@
+\doxysection{Request.\+h}
+\hypertarget{_request_8h_source}{}\label{_request_8h_source}\mbox{\hyperlink{_request_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ REQUEST\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ REQUEST\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_request}{Request}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_request_a9141cc3e39aa38e8636aad15ba57a380}{Request}}(std::string\ ipIn,\ std::string\ ipOut,\ \textcolor{keywordtype}{int}\ time,\ \textcolor{keywordtype}{char}\ jobType);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \ \ \ \ std::string\ \mbox{\hyperlink{class_request_a25705cdbdf85c7ffdfff0e41795bfbfc}{getIpIn}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ std::string\ \mbox{\hyperlink{class_request_aa55c898286b6895e7d7245c9de97b211}{getIpOut}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_request_ae2e2641e6eb49b4dd1b29726c098789d}{getTime}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_request_a543cfe98d09b712ffcfe95f3322fa5ba}{getJobType}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00051\ \ \ \ \ std::string\ ipIn;\ }
+\DoxyCodeLine{00052\ \ \ \ \ std::string\ ipOut;\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{int}\ time;\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{char}\ jobType;\ }
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ REQUEST\_H}}
+
+\end{DoxyCode}

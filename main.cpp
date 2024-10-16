@@ -1,6 +1,15 @@
+/**
+ * @file main.cpp
+ * @brief Entry point for the LoadBalancer simulation program.
+ */
+
 #include <iostream>
 #include "LoadBalancer.h"
 
+/**
+ * @brief Main function to run the LoadBalancer simulation.
+ * @return Exit status of the program.
+ */
 int main() {
     int numServers, runtime;
     
@@ -12,12 +21,9 @@ int main() {
     LoadBalancer loadBalancer(numServers);
 
     for (int i = 0; i < numServers * 100; ++i) {
-        loadBalancer.addRandomRequest();
+        loadBalancer.addGuaranteedRequest();
     }
 
     loadBalancer.processRequests(runtime);
-
-    std::cout << "Last request was processed by Server " << loadBalancer.getLastProcessedServerId() << std::endl;
-
     return 0;
 }
