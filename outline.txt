@@ -1,0 +1,16 @@
+Request class:
+    Ip in
+    Ip out
+    Time (int)
+    Job type (P (processing), S (Streaming))
+
+Loadbalancer:
+    Queue of requests
+    Keeps track of Time (clock cycles)
+
+Custom Queue class:
+
+Webserver:
+    Takes requests from load balancer
+    Processes the requests
+    asks for another request
